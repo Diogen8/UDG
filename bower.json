@@ -1,0 +1,21 @@
+{
+  "name": "UDG",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Diogen8 <diogendota@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "3.*"
+  }
+}

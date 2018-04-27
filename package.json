@@ -1,0 +1,23 @@
+{
+  "name": "UDG",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-less": "^3.5.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "imagemin-pngquant": "^5.0.1",
+    "rimraf": "^2.6.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
