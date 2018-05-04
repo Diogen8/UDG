@@ -1,4 +1,4 @@
-# Test task for HTML-developer position in OTAKOYI
+# Test task for HTML-developer position in OTAKOYI (https://otakoyi.com/)
 Task is:
 - create adaptive markup without Bootstrap
 - you can use jQuery and others third-party libraries
