@@ -342,7 +342,7 @@ body {
     }
 }
 
-header {
+.header {
     height: 800px;
     position: relative;
     padding: 20px 30px;
@@ -353,32 +353,30 @@ header {
     url(../img/header-background.jpg) no-repeat;
     background-size: 38px 38px, cover, cover;
 
-    .header_top-row {
+    .top-row {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
 
         .logo {
-
             display: flex;
             flex-direction: column;
-            a {
+            
+            .logo__href {
                 text-decoration: none;
             }
-            .logo-phrase {
-                p {
+            
+            .logo__name-word {
                     font-size: 12.73px;
                     color: white;
                     text-transform: uppercase;
                     margin: 0;
                     padding-left: 30px;
                     .rl;
-                }
-
             }
 
-
         }
+        
         .menu {
             display: flex;
             flex-wrap: wrap;
@@ -397,11 +395,11 @@ header {
                 align-items: center;
                 user-select: none;
                 
-                &.navigation__visible {
+                &.navigation_visible {
                     display: flex;
                 }
 
-                .navigation_item {
+                .navigation__item {
                     text-decoration: none;
                     font-size: 17px;
                     .rl;
@@ -412,7 +410,7 @@ header {
                     position: relative;
                     white-space: nowrap;
 
-                    &.active {
+                    &.navigation__item_active {
                         &::before {
                             content: '';
                             display: block;
@@ -424,8 +422,8 @@ header {
                         }
                     }
 
-                    &:hover:not(.active) {
-                        .active;
+                    &:hover:not(.navigation__item_active) {
+                        .navigation__item_active;
                     }
 
                 }
@@ -496,7 +494,7 @@ header {
                     }
             }
 
-            .search_toggle {
+            .search-toggle {
                 width: 32px;
                 height: 100%;
                 display: block;
@@ -505,7 +503,8 @@ header {
                 cursor: pointer;
                 z-index: 3;
             }
-            .search-container {
+            
+            .search{
                 display: none;
                 position: absolute;
                 top: 55px;
@@ -515,11 +514,12 @@ header {
                 height: 44px;
                 background: rgba(255,255,255,0.3);
                 
-                &.visible {
+                &.search_visible {
                     display: flex;
                 }
             }
-            .search_input {
+            
+            .search__input {
                 width: 100%;
                 height: 100%;
                 background: transparent;
@@ -548,6 +548,7 @@ header {
                         outline: none;
                 }
             }
+            
             .search-clear {
                 display: flex;
                 width: 25px;
@@ -555,7 +556,7 @@ header {
                 margin: 0 15px;
                 box-sizing: border-box;
                 
-                .line {
+                .search-clear__line {
                     display: block;
                     width: 20px;
                     height: 1px;
@@ -586,7 +587,7 @@ header {
                 cursor: pointer;
                 position: relative;
                 
-                .menu-toggle_line {
+                .menu-toggle__line {
                     display: block;
                     background-color: @light-green;
                     width: 100%;
@@ -596,7 +597,7 @@ header {
                     }
                 }
                 
-                &.menu-toggle__opened {
+                &.menu-toggle_opened {
                     .menu-toggle_line {
                         position: absolute;
                         top: 7px;
@@ -619,7 +620,7 @@ header {
         }
     }
 
-    .header_content {
+    .header__content {
         position: relative;
         justify-content: center;
         flex-direction: column;
@@ -716,8 +717,6 @@ header {
     }
 
 }
-
-
 
 .content {
     padding-top: 97px;
