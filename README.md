@@ -1,4 +1,4 @@
-# UDG
+# Test task for HTML-developer position
 Task is:
 - create adaptive markup without Bootstrap
 - you can use jQuery and others third-party libraries
